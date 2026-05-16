@@ -1,0 +1,264 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zack's Interests | Music</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup/dist/magnific-popup.css">
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!--
+    HEADER + NAVIGATION SECTION ----------------------------------------------------
+-->
+<header>
+    <h1>Zack’s Music Taste</h1>
+    <nav>
+        <ul>
+            <!-- Navigation links to all pages -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="music.html" class="active">Music</a></li>
+            <li><a href="fashion.html">Fashion</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- 
+        INTRO SECTION ----------------------------------------------------
+    -->
+    <section class="bio">
+        <h2>About Zack’s Music Taste</h2>
+
+        <div class="bio-row">
+            <img src="images/Study.jpeg" alt="Zack studying with music" class="profile-img">
+        </div>
+
+        <p>
+            Zack enjoys music because it helps him relax, stay motivated, and express himself. 
+            He listens to a wide variety of genres and appreciates artists who put emotion and 
+            storytelling into their work. Music is a big part of his daily routine and helps 
+            shape his personality and creativity.
+        </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!--
+        FAVORITE ARTIST TIMELINE SECTION ----------------------------------------------------
+    -->
+    <section class="timeline-section music-timeline">
+        <h2>Favorite Artist: <em>The Strokes</em></h2>
+        <p><em>Album buttons will later play music snippets when JavaScript is added.</em></p>
+
+        <div class="timeline-vertical">
+
+            <!-- Album 1 -->
+            <div class="timeline-block">
+                <button class="timeline-btn album-btn">
+                    <img src="images/Album1.jpg" alt="Album Cover" class="album-img">
+                </button>
+                <p class="timeline-text">
+                    <strong>Album Title:</strong> The New Abnormal (2020)<br>
+                    <strong>Artist:</strong> The Strokes<br>
+                    <strong>Number of Songs:</strong> 9<br>
+                    <strong>Total Length:</strong> 00:45:10<br>
+                    <a href="https://open.spotify.com/album/2xkZV2Hl1Omi8rk2D7t5lN" target="_blank">Listen Here</a>
+                </p>
+            </div>
+
+            <!-- Album 2 -->
+            <div class="timeline-block">
+                <button class="timeline-btn album-btn">
+                    <img src="images/Album2.jpg" alt="Album Cover" class="album-img">
+                </button>
+                <p class="timeline-text">
+                    <strong>Album Title:</strong> Room on Fire (2003)<br>
+                    <strong>Artist:</strong> The Strokes<br>
+                    <strong>Number of Songs:</strong> 11<br>
+                    <strong>Total Length:</strong> 00:33:05<br>
+                    <a href="https://open.spotify.com/album/3HFbH1loOUbqCyPsLuHLLh" target="_blank">Listen Here</a>
+                </p>
+            </div>
+
+            <!-- Album 3 -->
+            <div class="timeline-block">
+                <button class="timeline-btn album-btn">
+                    <img src="images/Album3.jpg" alt="Album Cover" class="album-img">
+                </button>
+                <p class="timeline-text">
+                    <strong>Album Title:</strong> Comedown Machine (2013)<br>
+                    <strong>Artist:</strong> The Strokes<br>
+                    <strong>Number of Songs:</strong> 11<br>
+                    <strong>Total Length:</strong> 00:39:54<br>
+                    <a href="https://open.spotify.com/album/4WnkQO4xD9ljQooB3VIxCV" target="_blank">Listen Here</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 
+        ALBUM GALLERY 1 SECTION ----------------------------------------------------
+    -->
+    <section class="photo-strip">
+        <h2>The Strokes Album Gallery</h2>
+        <div class="strip-container">
+            <img src="images/Album1.jpg" alt="">
+            <img src="images/Album2.jpg" alt="">
+            <img src="images/Album3.jpg" alt="">
+            <img src="images/Album4.jpg" alt="">
+            <img src="images/Album5.jpg" alt="">
+            <img src="images/Album6.jpg" alt="">
+            <img src="images/Album3.jpg" alt="">
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 
+        MUSIC STATISTICS SECTION ----------------------------------------------------
+    -->
+    <section class="stats music-stats">
+        <h2>Music Stats</h2>
+        <div class="stats-grid">
+            <div class="stat-box"><strong>Hours Listened (Year):</strong> 52,000 Minutes</div>
+            <div class="stat-box"><strong>Favorite Genre:</strong> Indie Rock</div>
+            <div class="stat-box"><strong>Most Played Song:</strong> Someday by The Strokes</div>
+            <div class="stat-box"><strong>First Concert:</strong> Cage the Elephant Aug. 4th 2025</div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 
+        2ND FAVORITE ARTIST SECTION ----------------------------------------------------
+    -->
+    <section class="timeline-section music-timeline">
+        <h2>Favorite Artist: <em>TV Girl</em></h2>
+        <p><em>Album buttons will later play music snippets when JavaScript is added.</em></p>
+
+        <div class="timeline-vertical">
+
+            <!-- Album 1 -->
+            <div class="timeline-block">
+                <button class="timeline-btn album-btn">
+                    <img src="images/Album7.jpg" alt="Album Cover" class="album-img">
+                </button>
+                <p class="timeline-text">
+                    <strong>Album Title:</strong> Who Really Cares (2016)<br>
+                    <strong>Artist:</strong> TV Girl<br>
+                    <strong>Number of Songs:</strong> 10<br>
+                    <strong>Total Length:</strong> 00:36:55<br>
+                    <a href="https://open.spotify.com/album/4oL7pMxnb04uuRI7ReXmuh" target="_blank">Listen Here</a>
+                </p>
+            </div>
+
+            <!-- Album 2 -->
+            <div class="timeline-block">
+                <button class="timeline-btn album-btn">
+                    <img src="images/Album8.jpg" alt="Album Cover" class="album-img">
+                </button>
+                <p class="timeline-text">
+                    <strong>Album Title:</strong> French Exit (2014)<br>
+                    <strong>Artist:</strong> TV Girl<br>
+                    <strong>Number of Songs:</strong> 12<br>
+                    <strong>Total Length:</strong> 00:40:43<br>
+                    <a href="https://open.spotify.com/album/4Hai0uVzRbyTSaTPzxTY4e" target="_blank">Listen Here</a>
+                </p>
+            </div>
+
+            <!-- Album 3 -->
+            <div class="timeline-block">
+                <button class="timeline-btn album-btn">
+                    <img src="images/Album9.jpg" alt="Album Cover" class="album-img">
+                </button>
+                <p class="timeline-text">
+                    <strong>Album Title:</strong> Death of a Party Girl (2018)<br>
+                    <strong>Artist:</strong> TV Girl<br>
+                    <strong>Number of Songs:</strong> 10<br>
+                    <strong>Total Length:</strong> 00:38:14<br>
+                    <a href="https://open.spotify.com/album/5kFjYk3umY8Pu1lymIJLVy" target="_blank">Listen Here</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 
+        ALBUM GALLERY 2 SECTION ----------------------------------------------------
+    -->
+    <section class="photo-strip">
+        <h2>TV Girl Album Gallery</h2>
+        <div class="strip-container">
+            <img src="images/Album7.jpg" alt="">
+            <img src="images/Album8.jpg" alt="">
+            <img src="images/Album9.jpg" alt="">
+            <img src="images/Album10.jpg" alt="">
+            <img src="images/Album11.jpg" alt="">
+            <img src="images/Album12.jpg" alt="">
+            <img src="images/Album10.jpg" alt="">
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 
+        PLAYLIST SECTION ----------------------------------------------------
+    -->
+    <section class="favorites">
+        <h2>Zack’s Playlist</h2>
+        <p>
+            This playlist is Zack’s personal collection of his favorite songs. 
+            It includes tracks that motivate him, help him relax, and represent 
+            his taste in music. You can listen to the playlist using the link below.
+        </p>
+        <p>
+            <a href="https://open.spotify.com/playlist/5aQ9IrUVFyx3SUEog4kr1K?si=wx5iRQyWSPuMxHYJGnzXpw&pi=88hjcCf7R0-Sj" 
+               target="_blank">Listen to Zack’s Playlist Here</a>
+        </p>
+
+        <img src="images/Playlist.jpeg" alt="Playlist Cover" class="album-img">
+    </section>
+
+</main>
+
+<!--
+    FOOTER SECTION ----------------------------------------------------
+-->
+<footer>
+    <h3>Contact Zack</h3>
+    <p>Email: <a href="mailto:zackortiz08@gmail.com">zackortiz08@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/zackortiz08/" target="_blank">instagram.com/zackortiz08</a></p>
+    <p>&copy; 2026 Zack Ortiz | Designed by Noah Ortiz</p>
+</footer>
+
+<button id="backToTop">↑</button>
+
+</body>
+</html>

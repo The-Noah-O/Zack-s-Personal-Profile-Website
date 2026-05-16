@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zack's Interests | Home</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup/dist/magnific-popup.css">
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!--
+    HEADER + NAVIGATION BAR SECTION ----------------------------------------------------
+-->
+<header>
+    <h1>Zack’s Interest Showcase</h1>
+    <nav>
+        <ul>
+            <!-- Navigation links to all pages -->
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="fashion.html">Fashion</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!--
+        BIO SECTION ----------------------------------------------------
+    -->
+    <section class="bio">
+        <h2>About Zack</h2>
+
+        <div class="bio-row">
+            <!-- Side images + main profile photo -->
+            <img src="images/WeddingtonLogo.jpg" alt="Left image" class="side-img">
+            <img src="images/Headshot.jpeg" alt="Zack Profile Photo" class="profile-img">
+            <img src="images/UNC.jpg" alt="Right image" class="side-img">
+        </div>
+
+        <p><strong>Zack Ortiz</strong> is a Senior at Weddington High School. He will be attending UNC Chapel Hill in Fall 2026.</p>
+        <p>This website highlights his passion for sports, music, and fashion. It will give visitors a deeper look into who Zack is.</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 
+        QUICK STATS SECTION ----------------------------------------------------
+    -->
+    <section class="stats">
+        <h2>Quick Stats</h2>
+        <div class="stats-grid">
+            <div class="stat-box"><strong>Age:</strong> 17</div>
+            <div class="stat-box"><strong>Height:</strong> 5'10"</div>
+            <div class="stat-box"><strong>HS Graduation:</strong> 2026</div>
+            <div class="stat-box"><strong>College Graduation:</strong> 2030</div>
+            <div class="stat-box"><strong>Intended Major:</strong> Undecided</div>
+        </div>
+    </section>   
+
+    <div class="divider"></div>
+
+    <!--
+        PHOTO STRIP SECTION ----------------------------------------------------
+    -->
+    <section class="photo-strip">
+        <h2>Photo Strip</h2>
+        <div class="strip-container">
+            <img src="images/Friends1.jpeg" alt="">
+            <img src="images/Friends2.jpeg" alt="">
+            <img src="images/Friends3.jpeg" alt="">
+            <img src="images/Friends4.jpeg" alt="">
+            <img src="images/Friends5.jpeg" alt="">
+            <img src="images/Friends6.jpeg" alt="">
+            <img src="images/Solo.jpeg" alt="">
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!--
+        INTEREST CARDS SECTION ----------------------------------------------------
+    -->
+    <section class="interests-overview">
+        <h2>Explore Zack’s Interests</h2>
+
+        <div class="interest-cards">
+            <!-- Card linking to Sports page -->
+            <a href="sports.html" class="card">
+                <span class="card-label">Sports</span>
+                <img src="images/SoccerIcon.avif" class="card-img" alt="Sports icon">
+            </a>
+
+            <!-- Card linking to Music page -->
+            <a href="music.html" class="card">
+                <span class="card-label">Music</span>
+                <img src="images/MusicIcon.jpg" class="card-img" alt="Music icon">
+            </a>
+
+            <!-- Card linking to Fashion page -->
+            <a href="fashion.html" class="card">
+                <span class="card-label">Fashion</span>
+                <img src="images/FashionIcon.jpg" class="card-img" alt="Fashion icon">
+            </a>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 
+        FAVORITES SECTION ----------------------------------------------------
+    -->
+    <section class="favorites">
+        <h2>Zack’s Favorite Things</h2>
+        <div class="favorites-grid">
+            <div class="fav-box"><strong>Food:</strong> Seco de Pollo Ecuatoriano</div>
+            <div class="fav-box"><strong>Movie:</strong> 22 Jump Street</div>
+            <div class="fav-box"><strong>Show:</strong> Bojack Horseman</div>
+            <div class="fav-box"><strong>Hobby:</strong> Sleep</div>
+            <div class="fav-box"><strong>Exercise:</strong> Bench Press</div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!--
+        FUN FACT SECTION ----------------------------------------------------
+    -->
+    <section class="fun-fact">
+        <h2>Fun Fact</h2>
+
+        <div class="fun-btn-wrapper">
+            <button class="fun-btn">Show Fun Fact</button>
+        </div>
+
+        <p id="funFactDisplay" class="fun-fact-display"></p>
+
+        <ul class="fun-fact-list" style="display: none;">
+            <li>Zack is a Cancer zodiac sign.</li>
+            <li>Zack is the comedian of the family.</li>
+            <li>Zack had an alter ego known as Chicken Man in kindergarten.</li>
+            <li>Zack benches 225.</li>
+            <li>Zack's first job was at Jersey Mike’s.</li>
+            <li>Zack’s favorite video game is Rocket League.</li>
+            <li>Zack’s favorite show is Bojack Horseman.</li>
+            <li>Zack’s car’s tire broke off while driving.</li>
+            <li>Zack’s favorite football team is the Miami Dolphins.</li>
+            <li>Zack’s favorite soccer team is FC Barcelona.</li>
+            <li>Zack used to have a YouTube channel.</li>
+        </ul>
+    </section>
+
+
+
+</main>
+
+<!-- 
+    FOOTER SECTION ----------------------------------------------------
+-->
+<footer>
+    <h3>Contact Zack</h3>
+    <p>Email: <a href="mailto:zackortiz08@gmail.com">zackortiz08@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/zackortiz08/" target="_blank">instagram.com/zackortiz08</a></p>
+    <p>&copy; 2026 Zack Ortiz | Designed by Noah Ortiz</p>
+</footer>
+
+<button id="backToTop">↑</button>
+
+</body>
+</html>
