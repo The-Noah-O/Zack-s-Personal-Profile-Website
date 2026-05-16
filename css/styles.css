@@ -1,0 +1,487 @@
+/* 
+GLOBAL PAGE STYLING SECTION    ----------------------------------------
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+/* Header + Navigation Bar */
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content wrapper */
+main {
+    padding: 20px;
+}
+
+/* Section alignment for homepage components */
+.bio,
+.stats,
+.photo-strip,
+.interests-overview,
+.favorites,
+.fun-fact,
+.recreation,
+.ajax-section {
+    text-align: center;
+}
+
+
+/*
+BIO SECTION ----------------------------------------------------
+*/
+
+.bio-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+/* Profile + side images */
+.profile-img,
+.side-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.profile-img { max-width: 250px; }
+.side-img { max-width: 180px; }
+
+/* Divider bar*/
+.divider {
+    width: 100%;
+    height: 4px;
+    background: #7BAFD4;
+    margin: 40px 0;
+}
+
+/* 
+STATS + FAV GRID SECTION ----------------------------------------------------
+*/
+
+.stats-grid,
+.favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Individual stat/favorite boxes */
+.stat-box,
+.fav-box {
+    background: white;
+    padding: 15px 15px 15px 45px;
+    border-radius: 8px;
+    border: 3px solid #7BAFD4;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+}
+
+/* Icon placement inside box */
+.stat-box::before,
+.fav-box::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+
+/* Stat icons */
+.stat-box:nth-child(1)::before { background-image: url("../images/Age.jpg"); }
+.stat-box:nth-child(2)::before { background-image: url("../images/Height.jpg"); }
+.stat-box:nth-child(3)::before,
+.stat-box:nth-child(4)::before { background-image: url("../images/Graduation.jpg"); }
+.stat-box:nth-child(5)::before { background-image: url("../images/Major.jpg"); }
+
+/* Favorite icons */
+.fav-box:nth-child(1)::before { background-image: url("../images/Food.jpg"); }
+.fav-box:nth-child(2)::before { background-image: url("../images/Movie.jpg"); }
+.fav-box:nth-child(3)::before { background-image: url("../images/Show.jpg"); }
+.fav-box:nth-child(4)::before { background-image: url("../images/Hobby.jpg"); }
+.fav-box:nth-child(5)::before { background-image: url("../images/Excersice.jpg"); }
+
+/*
+PHOTO STRIP SECTION ----------------------------------------------------
+*/
+
+.strip-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.strip-container img {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    border: 4px solid #7BAFD4;
+    border-radius: 8px;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+/*
+INTEREST CARD SECTION ----------------------------------------------------
+*/
+
+.interest-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 3px solid #7BAFD4;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-img {
+    width: 100%;
+    max-width: 140px;
+    border-radius: 8px;
+}
+
+/*
+FUN FACT BUTTON AND LIST SECTION ----------------------------------------------------
+*/
+
+.fun-btn {
+    padding: 10px 20px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fun-btn:hover {
+    background: #444;
+}
+
+.fun-fact-list {
+    display: none;
+}
+
+
+.fun-fact-display {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+.fun-btn-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*
+FOOTER SECTION ----------------------------------------------------
+*/
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #9ecbff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Hover animations for interactive elements */
+.stat-box:hover,
+.fav-box:hover,
+.card:hover,
+.strip-container img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Section headers with underline accent */
+h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #7BAFD4;
+    border-radius: 2px;
+}
+
+/*
+MUSIC STATS ICONS SECTIONS ----------------------------------------------------
+*/
+
+.music-stats .stat-box:nth-child(1)::before { background-image: url("../images/HoursIcon.png"); }
+.music-stats .stat-box:nth-child(2)::before { background-image: url("../images/MusicIcon2.jpg"); }
+.music-stats .stat-box:nth-child(3)::before { background-image: url("../images/SongIcon.jpg"); }
+.music-stats .stat-box:nth-child(4)::before { background-image: url("../images/ConcertIcon.jpg"); }
+
+/*
+TIMELINE FIELD CURTAINS SECTION ----------------------------------------------------
+*/
+
+.fashion-timeline,
+.soccer-timeline,
+.football-timeline,
+.music-timeline {
+    position: relative;
+    overflow: hidden;
+    padding: 0 160px;
+    background: transparent;
+}
+
+/* Curtain overlays for timelines */
+.fashion-timeline::before,
+.fashion-timeline::after,
+.soccer-timeline::before,
+.soccer-timeline::after,
+.football-timeline::before,
+.football-timeline::after,
+.music-timeline::before,
+.music-timeline::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 160px;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+/* Curtain images per category */
+.fashion-timeline::before,
+.fashion-timeline::after {
+    background-image: url("../images/RedCurtain.jpg");
+    opacity: 0.80;
+}
+
+.soccer-timeline::before,
+.soccer-timeline::after {
+    background-image: url("../images/SoccerField.jpg");
+    opacity: 0.60;
+}
+
+.football-timeline::before,
+.football-timeline::after {
+    background-image: url("../images/FootballField.jpg");
+    opacity: 0.60;
+}
+
+.music-timeline::before,
+.music-timeline::after {
+    background-image: url("../images/MusicCurtain.jpg");
+    opacity: 0.80;
+}
+
+/* Left curtain fade */
+.fashion-timeline::before,
+.soccer-timeline::before,
+.football-timeline::before,
+.music-timeline::before {
+    left: 0;
+    mask-image: linear-gradient(to right, transparent, black 45%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 45%);
+}
+
+/* Right curtain fade */
+.fashion-timeline::after,
+.soccer-timeline::after,
+.football-timeline::after,
+.music-timeline::after {
+    right: 0;
+    mask-image: linear-gradient(to left, transparent, black 45%);
+    -webkit-mask-image: linear-gradient(to left, transparent, black 45%);
+}
+
+/* 
+TIMELINE CONTENT BLOCKS ----------------------------------------------------
+*/
+
+.timeline-section {
+    text-align: center;
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.timeline-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Timeline buttons */
+.timeline-btn {
+    background: white;
+    border: 3px solid #7BAFD4;
+    border-radius: 10px;
+    padding: 20px;
+    width: 220px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+    transition: 0.25s ease;
+}
+
+.timeline-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+
+.timeline-date {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.timeline-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #7BAFD4;
+}
+
+.timeline-text {
+    max-width: 550px;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+/* Album-style timeline buttons */
+.album-btn {
+    width: 220px;
+    height: 220px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #7BAFD4;
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #7BAFD4;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: none;
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+#backToTop:hover {
+    background: #5a94b8;
+}
+
+/*AJAX list style*/
+.achievement-list {
+    padding-left: 40px;
+    list-style-type: none;
+}
+
+/*Visual indicator for which page your on in the nav bar*/
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #7BAFD4; 
+}
